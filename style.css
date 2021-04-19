@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'aquilinetworegular';
+    src: url('fonts/AquilineTwo-webfont.eot');
+    src: url('fonts/AquilineTwo-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/AquilineTwo-webfont.woff') format('woff'), url('fonts/AquilineTwo-webfont.ttf') format('truetype'), url('fonts/AquilineTwo-webfont.svg#aquilinetworegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'aquilinetworegular', "Arial Black", Arial, sans-serif;
+}
+
+.acceuil {
+    background: url("images/fond_acceuil.jpg") fixed left -100px;
+    color: #E5E3B8;
+    text-shadow: 4px 4px 6px black;
+}
+
+.heramy {
+    background: url("images/fond_heramy.jpg") fixed;
+    color: #E5E3B8;
+    text-shadow: 4px 4px 6px black;
+}
+
+.bloody_trail {
+    background: url("images/bloody_trail.jpg") fixed left -100px;
+    color: #E5E3B8;
+    text-shadow: 4px 4px 6px black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    color: #DAC30A;
+}
+
+h2 {
+    width: 65%;
+    margin: auto;
+    font-size: 3.5em;
+}
+
+p {
+    width: 80%;
+    margin: auto;
+    font-size: 2.5em;
+    text-align: justify;
+}
+
+em {
+    font-weight: bolder;
+    font-style: normal;
+    color: #A30000;
+}
+
+a:hover em,
+a:hover {
+    color: #37F6E3;
+    text-shadow: 0px 0px 10px white;
+}
+
+a {
+    color: #E5E3B8;
+}

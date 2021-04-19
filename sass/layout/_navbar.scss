@@ -1,0 +1,35 @@
+nav {
+    width: 50px;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    transition: 400ms ease;
+    background-image: url("../images/wood_paper_texture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    li {
+        list-style: none;
+        height: 100px;
+        text-align: center;
+        visibility: hidden;
+        transition: visibility 0s linear 0s;
+        a {
+            text-decoration: none;
+            color: $clr-primary;
+        }
+        a:hover em,
+        a:hover {
+            color: $clr-shining;
+            text-shadow: 0px 0px 10px white;
+        }
+    }
+    &:hover {
+        width: 615px;
+        li {
+            visibility: visible;
+            transition: visibility 0s linear 350ms;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+main {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/paper_texture.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 5%;
+    h1 {
+        margin-bottom: 0;
+        font-size: 1.4em;
+        text-align: center;
+        color: $clr-tertiary;
+        position: relative;
+        .title {
+            padding-top: 1%;
+            padding-bottom: 1%;
+            line-height: 190%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -65%);
+            background-color: rgb(218, 195, 10);
+            background-repeat: repeat;
+            background-image: linear-gradient(7deg, rgba(218, 195, 10, 1) 0%, rgba(218, 195, 10, 1) 15%, rgba(255, 255, 255, 1) 43%, rgba(218, 195, 10, 1) 44%, rgba(218, 195, 10, 1) 50%, rgba(255, 255, 255, 1) 80%);
+            background-size: 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+        }
+    }
+    h2 {
+        line-height: 100%;
+        padding-bottom: 3%;
+        width: 65%;
+        margin: auto;
+    }
+    p {
+        width: 60%;
+        margin: auto;
+        text-align: justify;
+    }
+    a:hover em,
+    a:hover {
+        color: $clr-shining;
+        text-shadow: 0px 0px 10px white;
+    }
+    a {
+        font-weight: bolder;
+        color: $clr-secondary;
+        text-decoration: none;
+    }
+}
