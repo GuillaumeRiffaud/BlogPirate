@@ -1,3 +1,14 @@
+const talesImages = [
+    [],
+    ["images/flee1.jpg", "images/flee2.jpg", "images/flee3.jpg", "images/flee4.png"],
+    ["images/prime.jpg"],
+    ["images/crestedqueen.jpg"]
+];
+
+function getTalesImagesByTaleId(taleId) {
+    return talesImages[taleId].shift();
+}
+
 const tales = [{
         title: "Une cascade</br>en arène !",
         content: `<p>N'aillant plus rien à prouver aux compagnies de l'ordre des âmes, des marchants ou des collectionneurs d'or, je décidai de rendre visite au terrible fondateur des loups de mer: DeMarco, afin de m'inscrire à un de ses célèbres combats d'arène. C'est ainsi
@@ -19,13 +30,13 @@ const tales = [{
     },
     {
         title: "Des amis perdus,</br>un butin sauvé",
-        content: `<p>Alors que je me rendais à Thieve's Haven pour une quête d'importance légendaire, je trouvai un brigantin en feu échoué sur la plage. Devant ses voiles blanches de noob, et dans un élan de RP (pas comme là), je m'exclamai "omg what happened? it looks terrible, are you guys alright?"<img class="taleImage" src="images/flee1.jpg"></p>
+        content: `<p>Alors que je me rendais à Thieve's Haven pour une quête d'importance légendaire, je trouvai un brigantin en feu échoué sur la plage. Devant ses voiles blanches de noob, et dans un élan de RP (pas comme là), je m'exclamai "omg what happened? it looks terrible, are you guys alright?"<img class="taleImage" src="${getTalesImagesByTaleId(1)}"></p>
         <p>Deux hommes sortirent alors de cette fournaise, l'air perdus, avec chacun dans les mains un coffre sans aucune valeur. Après quelques discussions ensemble (RP à souhait: "I don't think we can fix that ship" -l'un d'eux meurt dans une explosion- "omg did your friend just die?? all there's left of him is a grilled chicken wing!"), je décidai de les emmener à l'avant-poste le plus proche avec mon bateau afin qu'ils vendirent leurs piètres trouvailles. Ils me remercièrent chaleureusement, nous bûmes ensemble puis je repartis à ma mission.</p>
-        <p>Après plusieurs heures d'intense labeur, je m'étais retrouvé avec un butin d'une valeur très élevée, composé notamment de 3 barrils explosifs que le seigneur des pirates lui-même m'avait commandé, mais j'entendis au loin des coups de canons. <img class="taleImage" src="images/flee2.jpg"> 
+        <p>Après plusieurs heures d'intense labeur, je m'étais retrouvé avec un butin d'une valeur très élevée, composé notamment de 3 barrils explosifs que le seigneur des pirates lui-même m'avait commandé, mais j'entendis au loin des coups de canons. <img class="taleImage" src="${getTalesImagesByTaleId(1)}"> 
         C'est alors que devant mon œil fixé dans ma longue-vue se déroula une tragédie: un galion était en train d'attaquer mes récents amis, qui de toute évidence étaient impuissants face à cet ennemi.</p>
         <p>De là où j'étais, je n'eu rien pu faire que de les observer couler, mais il y avait plus important: si ce galion voulait du sang, je serai le prochain sur sa liste, Thieve's haven étant réputé pour abriter des butins d'Athéna ces temps-ci.</p>
-        <p>Je me mis à élaborer une stratégie: l'avant-poste où le galion se trouvait était au Nord Ouest de mon île, mon bateau se situait au Sud de l'île, en manœuvrant subtilement, je pourrai m'enfuir par le Sud-Est en étant totalement abrité de leur vision par les reliefs de l'île.<img class="taleImage" src="images/flee3.jpg"></p>
-        <p>Ils ne me virent pas partir, et la vie perdue de mes amis aura probablement sauvé la mienne et la réussite de ma mission.<img class="taleImage" src="images/flee4.png"></p>`
+        <p>Je me mis à élaborer une stratégie: l'avant-poste où le galion se trouvait était au Nord Ouest de mon île, mon bateau se situait au Sud de l'île, en manœuvrant subtilement, je pourrai m'enfuir par le Sud-Est en étant totalement abrité de leur vision par les reliefs de l'île.<img class="taleImage" src="${getTalesImagesByTaleId(1)}"></p>
+        <p>Ils ne me virent pas partir, et la vie perdue de mes amis aura probablement sauvé la mienne et la réussite de ma mission.<img class="taleImage" src="${getTalesImagesByTaleId(1)}"></p>`
     },
     {
         title: "Une stratégie</br>explosive",
@@ -36,7 +47,7 @@ const tales = [{
         Je ne sais pas où ils se trouvent exactement et par où est-ce qu'ils abordent l'île, j'ouvre grand l'oeil, et voilà que surgit un pirate tenant la prime de la faucheuse dans les mains, je tire sur mon explosif placé le plus à l'extérieur de la tente où va se faire la vente.</p>
         <p>Une première explosion, une demi seconde de suspens, a t-il vendu?
         Les autres barils se mettent à réagir en chaîne, 2 puis 3 explosions... Et je l'entends agoniser.
-        <img class="taleImage" src="images/prime.jpg"</p>
+        <img class="taleImage" src="${getTalesImagesByTaleId(2)}"</p>
         <p>La prime m'attend aux pieds de l'acheteuse.</p>
         `
     },
@@ -48,6 +59,6 @@ const tales = [{
         <p>J'entends encore dans ma tête la voix de Duke me disant "tout ce que je te souhaite c'est de ne pas la croiser et de revenir vivante".</p>
         <p>Pourtant, à 1h50, elle était là, devant moi, rugissante de sa couleur améthyste, brillante de colère: la Crested Queen.</p>
         <p>Nous nous affrontâmes de toute notre énergie, comme si chacune de nous savait que le temps nous était compté. Et après des échanges de regards et de coups, elle sombra. Il est 1h58, je suis écumée mais j'ai fait tomber la couronne de la Crested Queen.»
-        <img class="taleImage" src="images/crestedqueen.jpg"></p>`
+        <img class="taleImage" src="${getTalesImagesByTaleId(3)}"></p>`
     }
 ]
